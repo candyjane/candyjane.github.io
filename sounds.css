@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(4, 4, 4);
+}
+
+nav a.active {
+    color:rgb(0, 0, 0);
+    text-decoration:underline;
+}
+
+
+nav .logo {
+    width: 80px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Amatic SC;
+}
+
+.container{
+    background: transparent;
+}
+
+.container .heading{
+    font-size: 4rem;
+    font-weight: bold;
+    padding:5rem;
+    text-align: center;
+    font-family: Ms Madi;
+    color: rgb(255, 255, 255);
+}
+
+.container .music-container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding-top: 0;
+}
+
+.container .music-container .box{
+    height: 10rem;
+    width:80%;
+    display: flex;
+    align-items: center;
+    background-blend-mode: #435d81;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem #000;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.container .music-container .box .image{
+    height:100%;
+    width: 25%;
+}
+
+.container .music-container .box .image img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .music-container .box p{
+    color: white;
+    padding: 2rem;
+    font-family: Amatic SC;
+    font-size: 20px;
+}
+
+.container .music-container .box .music{
+    width: 75%;
+}
+
+.container .music-container .box .music audio{
+    width:100%;
+    outline: none;
+    padding-right: 1rem;
+}
+
+.container .music-container .box .music audio:-webkit-media-controls-eclosure{
+    background: none;
+}
+
+
+
+
